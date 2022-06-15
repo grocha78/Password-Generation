@@ -43,17 +43,35 @@ var characterPref = {
   upperCase: charactersUpper,
   num: charactersNum,
   specialChar: charactersSpecial
+  
 }
+console.log(characterPref);
 return characterPref;
+
+
 }
 
 function generatePassword() {
   var userPref = dataPreferences();
   console.log(userPref, "This returns user's password preferences");
-  if (characterPref.specialChar) {
+  if (userPref.specialChar) {
   var randoSpec = specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
   }
   console.log(randoSpec);
+  if (userPref.lowerCase) {
+    var randoLow = lowerCase[Math.floor(Math.random() * lowerCase.length)];
+  }
+  console.log(randoLow);
+  if (userPref.upperCase) {
+    var randoUpper = upperCase[Math.floor(Math.random() * upperCase.length)];
+  }
+  console.log(randoUpper);
+  if (userPref.num) {
+    var randoNum = numbers[Math.floor(Math.random() * numbers.length)];
+  }
+  console.log(randoNum);
+    
+
 
 
 
