@@ -56,7 +56,7 @@ function generatePassword() {
   console.log(userPref, "This returns user's password preferences");
   if (userPref.specialChar) {
   var randoSpec = specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
-  }
+  } 
   console.log(randoSpec);
   if (userPref.lowerCase) {
     var randoLow = lowerCase[Math.floor(Math.random() * lowerCase.length)];
@@ -70,14 +70,8 @@ function generatePassword() {
     var randoNum = numbers[Math.floor(Math.random() * numbers.length)];
   }
   console.log(randoNum);
-    
-
-
-
-
-
-
-}
+ 
+};
 
 
 // Add event listener to generate button
